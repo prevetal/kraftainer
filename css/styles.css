@@ -6108,7 +6108,9 @@ header .phone a
 {
     display: block;
 
+    min-width: 100px;
     max-width: 100%;
+    min-height: 100px;
     max-height: 100%;
 }
 
@@ -9034,7 +9036,9 @@ header .phone a
 
     display: block;
 
+    min-width: 100px;
     max-width: 100%;
+    min-height: 100px;
     max-height: 100%;
 
     pointer-events: none;
