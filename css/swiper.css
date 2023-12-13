@@ -1,0 +1,159 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    top: auto;
+    bottom: 100%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    margin: 0 0 32px;
+
+    transform: none;
+
+    color: #68918a;
+    border-radius: 50%;
+    background: rgba(104, 145, 138, .12);
+}
+
+.swiper-button-prev
+{
+    right: 62px;
+    left: auto;
+}
+
+.swiper-button-next
+{
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 12px;
+    height: 20px;
+}
+
+.swiper-button-prev .icon
+{
+    transform: rotate(180deg);
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    top: 22px;
+    left: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 8px;
+    padding: 0 22px;
+
+    pointer-events: none;
+}
+
+
+.swiper-pagination-bullet
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 8px;
+
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .06);
+}
+
+.swiper-pagination-bullet:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+
+    border-radius: inherit;
+    background: #fff;
+}
+
+.swiper-pagination-bullet.passed:before
+{
+    width: 100%;
+}
+
+.swiper-pagination-bullet.active:before
+{
+    animation-name: bullet;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    animation-fill-mode: forwards;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet.active:before
+{
+    animation-delay: .5s;
+}
+
+@keyframes bullet
+{
+    to
+    {
+        width: 100%;
+    }
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 11px !important;
+}
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}

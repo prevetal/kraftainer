@@ -1,0 +1,41 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 48px;
+    }
+
+
+    .wrap,
+    .fancybox__container
+    {
+        zoom: .53;
+    }
+
+
+    @-moz-document url-prefix()
+    {
+        html
+        {
+            width: calc(100% / .53);
+            height: calc(100% / .53);
+
+            transform: scale(.53);
+            transform-origin: left top;
+        }
+    }
+
+
+
+    /*---------------
+        Locations
+    ---------------*/
+    .locations .socials a + a
+    {
+        margin-left: 4px;
+    }
+}
