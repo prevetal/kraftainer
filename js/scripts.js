@@ -5,6 +5,42 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: document.getElementById("thanks"),
+			type: 'inline'
+		}])
+
+		if(event.detail.contactFormId == '173') {
+	    	ym(91687085,'reachGoal','container')
+	    }
+
+	    if(event.detail.contactFormId == '171') {
+	    	ym(91687085,'reachGoal','modal')
+	    }
+
+	    if(event.detail.contactFormId == '304') {
+	     	ym(91687085,'reachGoal','whatsapp')
+	    }
+
+	    if(event.detail.contactFormId == '172') {
+	     	ym(91687085,'reachGoal','footer')
+	    }
+       
+    }, false );
+
+	$('#city_modal .quike_links .btn').click(function(e) {
+		Fancybox.close()
+		let phone = $(this).data("phone");
+		let text = $(this).text();
+		$("header .phone a").prop("href", "tel:"+phone);
+		$("header .phone a").text(phone);
+		$("header .city .btn span").text(text);
+	});
+    
 	// Локации
 	let locations = document.querySelector('.locations .images .swiper')
 
@@ -30,10 +66,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				loadOnTransitionStart: true,
 				loadPrevNext: true
 			},
-			autoplay: {
-				delay: 3000,
+			/*autoplay: {
+				delay: 6000,
 				disableOnInteraction: false
-			},
+			},*/
 			on: {
 				beforeTransitionStart: swiper => {
 					!swiper.realIndex
@@ -165,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				loadPrevNext: true
 			},
 			autoplay: {
-				delay: 3000,
+				delay: 6000,
 				disableOnInteraction: false
 			},
 			on: {
@@ -243,6 +279,29 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.images-swiper-button-next',
 				prevEl: '.images-swiper-button-prev'
 			},
+			autoplay: {
+			    enabled: false,
+			},
+			breakpoints: {
+			    320: {
+				    pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets',
+						clickable: true,
+						bulletActiveClass: 'active'
+					},
+					/*autoplay: {
+						enabled: true,
+						delay: 6000,
+						disableOnInteraction: false
+					},*/
+			    },
+			    767: {
+			        pagination: false,
+			        autoplay: false
+			    }
+		    },
+
 			preloadImages: false,
 			lazy: {
 				enabled: true,
@@ -253,6 +312,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			spaceBetween: 0,
 			slidesPerView: 1,
 			on: {
+				beforeTransitionStart: swiper => {
+					!swiper.realIndex
+						? $(swiper.$el).find('.swiper-pagination-bullet').removeClass('passed')
+						: $(swiper.$el).find('.swiper-pagination-bullet:nth-child(-n+'+ swiper.realIndex +')').addClass('passed')
+				},
 				init: swiper => {
 					$(swiper.$el).closest('.images').find('.thumbs .btn').attr('data-slider-index', i)
 				},
@@ -288,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
+			threshold: 50,
 			navigation: {
 				nextEl: '.products-swiper-button-next',
 				prevEl: '.products-swiper-button-prev'
@@ -441,6 +506,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$(this).closest('.mini_modal').find('.btn').removeClass('selected')
 		$(this).addClass('selected').closest('.city').find('> .btn span').text(text)
+
+		console.log($(this).index() + 1);
 
 		parent.find('.data .item .val').hide()
 		parent.find('.data .item .val' + ($(this).index() + 1)).fadeIn(300)
@@ -648,7 +715,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Как мы будем работать
-	let currentStep = 2
+	/*let currentStep = 2
 
 	const InitInterval = () => {
 		interval = setInterval(() => {
@@ -668,21 +735,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			currentStep++
 		}, 5000)
-	}
+	}*/
 
-	InitInterval()
+	//InitInterval()
 
 
 	$('.steps .tabs .btn').click(function(e) {
 		e.preventDefault()
 
-		clearInterval(interval)
+		//InitInterval()
+
+		//clearInterval(interval)
 
 		currentStep = $(this).index()
 
 		currentStep = currentStep + 1
 
-		InitInterval()
+		//InitInterval()
 	})
 
 

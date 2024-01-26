@@ -352,10 +352,10 @@ button
 }
 
 
-.modal.fancybox__content > .carousel__button.is-close
+/*.modal.fancybox__content > .carousel__button.is-close
 {
     display: none;
-}
+}*/
 
 
 
@@ -645,6 +645,8 @@ header .menu
 {
     margin-right: auto;
     margin-left: auto;
+
+    list-style: none;
 }
 
 
@@ -671,7 +673,7 @@ header .menu_item > a
 
 
 header .menu_item:hover > a,
-header .menu_item > a.active
+header .menu_item.current-menu-item a
 {
     color: var(--text_color);
 }
@@ -2741,6 +2743,12 @@ header .phone a
     color: #070a09;
 }
 
+.locations .data .item .val a
+{
+    text-decoration: none;
+
+    color: #070a09;
+}
 
 .locations .callback_btn
 {
@@ -3123,6 +3131,11 @@ header .phone a
     line-height: 115%;
 
     letter-spacing: -1.36px;
+}
+
+.for_business .info .title span
+{
+    color: #68918a;
 }
 
 
@@ -3521,6 +3534,12 @@ header .phone a
     right: 0;
 
     display: block;
+
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 
@@ -5054,7 +5073,7 @@ header .phone a
 
     overflow: hidden;
 
-    height: 275px;
+    height: 363px;
 
     border-radius: 18px;
     background: var(--text_color);
@@ -6108,9 +6127,7 @@ header .phone a
 {
     display: block;
 
-    min-width: 100px;
     max-width: 100%;
-    min-height: 100px;
     max-height: 100%;
 }
 
@@ -6133,7 +6150,9 @@ header .phone a
     top: -48px;
     left: 50%;
 
+    min-width: 100px;
     max-width: none;
+    min-height: 100px;
     max-height: none;
 
     transform: translateX(-50%);
@@ -6146,7 +6165,9 @@ header .phone a
     bottom: -48px;
     left: 50%;
 
+    min-width: 100px;
     max-width: none;
+    min-height: 100px;
     max-height: none;
 
     transform: translateX(-50%);
@@ -7829,6 +7850,9 @@ header .phone a
 
     display: block;
 
+    min-width: 100px;
+    min-height: 100px;
+
     transform: translateX(-50%);
 }
 
@@ -8890,7 +8914,9 @@ header .phone a
 
     display: block;
 
+    min-width: 100px;
     max-width: 100%;
+    min-height: 100px;
     max-height: 100%;
 
     pointer-events: none;
@@ -8906,6 +8932,8 @@ header .phone a
     display: none;
 
     width: 100%;
+    min-width: 100px;
+    min-height: 100px;
 
     pointer-events: none;
 }
@@ -9055,6 +9083,8 @@ header .phone a
     display: none;
 
     width: 100%;
+    min-width: 100px;
+    min-height: 100px;
 
     pointer-events: none;
 }
@@ -9416,7 +9446,9 @@ header .phone a
 
     display: block;
 
+    min-width: 100px;
     max-width: 100%;
+    min-height: 100px;
     max-height: 100%;
 
     pointer-events: none;
@@ -9661,7 +9693,9 @@ header .phone a
 
     display: block;
 
+    min-width: 100px;
     max-width: 100%;
+    min-height: 100px;
     max-height: 100%;
 
     pointer-events: none;
@@ -9675,6 +9709,9 @@ header .phone a
     bottom: 0;
 
     display: none;
+
+    min-width: 100px;
+    min-height: 100px;
 
     pointer-events: none;
 }
@@ -12360,6 +12397,8 @@ footer .links
     max-width: 100%;
     margin-left: auto;
 
+    list-style: none;
+
     letter-spacing: -.16px;
 }
 
@@ -12716,4 +12755,83 @@ footer .socials a:hover
 {
     color: rgba(11, 19, 18, .60);
     background: rgba(11, 19, 18, .03);
+}
+
+.wpcf7-response-output
+{
+    display: none !important;
+}
+
+.wpcf7-not-valid
+{
+    border-color: var(--form_error_color) !important;
+}
+
+.modal_subtitle
+{
+    margin-top: 20px;
+}
+
+.block_head .desc.text_block
+{
+    color: #000;
+}
+
+.name_team
+{
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.mob_swipe
+{
+    display: none;
+}
+
+.mob_swipe img
+{
+    width: 32px;
+    height: 32px;
+}
+
+.videos_fix.videos .item .thumb
+{
+    height: 238px;
+}
+
+.block_head .title span.mob
+{
+    color: #68918a;
+}
+
+.few_questions .answer span.green
+{
+    color: #68918a;
+}
+
+.roof .answer span.green
+{
+    color: #68918a;
+}
+
+.facilities .answer span.green
+{
+    color: #68918a;
+}
+
+.cheaper_yourself .answer span.green
+{
+    color: #68918a;
+}
+
+.bathhouse .answer span.green
+{
+    color: #68918a;
+}
+
+.manager_help .info .title span,
+.constructor_action .info .title span
+{
+    color: #68918a;
 }

@@ -128,7 +128,7 @@
 .swiper-pagination-bullet.active:before
 {
     animation-name: bullet;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-timing-function: linear;
 
     animation-fill-mode: forwards;
