@@ -494,7 +494,7 @@ button
 
 .animate.fadeInUp
 {
-    transform: translateY(200px);
+    transform: translateY(175px);
 }
 
 
@@ -879,7 +879,7 @@ header .phone a
 
 .block_head.small
 {
-    width: 864px;
+    width: 868px;
     max-width: 100%;
     margin-bottom: 60px;
 }
@@ -1284,6 +1284,11 @@ header .phone a
     max-width: 100%;
 
     letter-spacing: .4px;
+}
+
+.first_section .desc.middle
+{
+    width: 759px;
 }
 
 .first_section .desc.big
@@ -12347,6 +12352,2379 @@ header .phone a
 
 
 
+/*--------------------------
+    Franchise advantages
+--------------------------*/
+.franchise_advantages .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -28px;
+    margin-left: -28px;
+}
+
+.franchise_advantages .row > *
+{
+    width: calc(33.333% - 28px);
+    margin-bottom: 28px;
+    margin-left: 28px;
+}
+
+
+.franchise_advantages .item
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    padding: 27px 27px 27px 35px;
+
+    border: 2px solid rgba(11, 19, 18, .04);
+    border-radius: 46px;
+}
+
+
+
+.franchise_advantages .item .icon
+{
+    order: 2;
+
+    margin-left: 20px;
+}
+
+
+.franchise_advantages .item .icon.absolute
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: auto;
+    height: 100%;
+}
+
+
+.franchise_advantages .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.franchise_advantages .item .icon.absolute img
+{
+    max-width: none;
+    height: 100%;
+    max-height: none;
+}
+
+
+.franchise_advantages .item .icon + *
+{
+    align-self: center;
+
+    width: 100%;
+}
+
+
+.franchise_advantages .item .name
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+.franchise_advantages .item .name span
+{
+    color: #68918a;
+}
+
+
+.franchise_advantages .item .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+
+/*---------------------------
+    Franchise give orders
+---------------------------*/
+.franchise_give_orders .block_head .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+}
+
+
+.franchise_give_orders .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -28px;
+    margin-left: -28px;
+}
+
+.franchise_give_orders .row > *
+{
+    width: calc(33.333% - 28px);
+    margin-bottom: 28px;
+    margin-left: 28px;
+}
+
+
+.franchise_give_orders .item
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 332px;
+    padding: 36px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_give_orders .item .name
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    position: relative;
+    z-index: 3;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_give_orders .item .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    position: relative;
+    z-index: 3;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_give_orders .item .img
+{
+    position: absolute;
+    z-index: 1;
+    right: 36px;
+    bottom: 0;
+
+    display: block;
+
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 50px;
+
+    pointer-events: none;
+}
+
+.franchise_give_orders .item .img.right
+{
+    right: 0;
+}
+
+.franchise_give_orders .item .img.center
+{
+    right: 0;
+    left: 0;
+
+    margin: 0 auto;
+}
+
+
+
+/*---------------------
+    Franchise minus
+---------------------*/
+.franchise_minus .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+.franchise_minus .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_minus .data .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_minus .data .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_minus .data .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_minus .data .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_minus .data .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+.franchise_minus .person
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 36px;
+}
+
+
+.franchise_minus .person .avatar
+{
+    position: relative;
+
+    width: 90px;
+    height: 125px;
+}
+
+.franchise_minus .person .avatar img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.franchise_minus .person .avatar + *
+{
+    align-self: center;
+
+    width: calc(100% - 108px);
+    margin-left: auto;
+}
+
+
+.franchise_minus .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_minus .image > img
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+.franchise_minus .info
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 36px;
+    left: 36px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: calc(100% - 72px);
+    min-height: 188px;
+    padding: 28px 36px 36px;
+
+    border-radius: 24px;
+}
+
+
+.franchise_minus .info .icon
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    background: url(../images/bg_advantage_icon.jpg) 50%/cover no-repeat #68918a;
+}
+
+.franchise_minus .info .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.franchise_minus .info .name
+{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 125%;
+
+    position: relative;
+    z-index: 2;
+
+    align-self: center;
+
+    width: calc(100% - 72px);
+
+    letter-spacing: -.44px;
+
+    color: #fff;
+}
+
+
+.franchise_minus .info .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    position: relative;
+    z-index: 2;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(255, 255, 255, .80);
+}
+
+
+.franchise_minus .info .bg
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    pointer-events: none;
+}
+
+
+
+/*----------------------------
+    Franchise first of all
+----------------------------*/
+.franchise_first_of_all
+{
+    border-radius: 62px 62px 0 0;
+}
+
+
+.franchise_first_of_all .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+.franchise_first_of_all .data
+{
+    width: calc(50% - 31px);
+    min-height: 384px;
+}
+
+
+.franchise_first_of_all .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_first_of_all .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_first_of_all ul li
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_first_of_all ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_first_of_all ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.franchise_first_of_all .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+.franchise_first_of_all .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+
+    pointer-events: none;
+}
+
+
+
+/*---------------------------
+    Franchise transaction
+---------------------------*/
+.franchise_transaction .image
+{
+    position: relative;
+    z-index: 3;
+
+    width: calc(50% - 31px);
+}
+
+.franchise_transaction .image:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: calc(100% - 88px);
+    margin: auto 0;
+
+    content: '';
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_transaction .image img
+{
+    position: relative;
+    z-index: 3;
+
+    display: block;
+
+    max-width: 100%;
+    margin: 0 auto;
+
+    border-radius: 24px;
+}
+
+
+.franchise_transaction .data
+{
+    align-self: center;
+
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_transaction .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_transaction .title span
+{
+    color: #68918a;
+}
+
+
+
+/*-----------------------------
+    Franchise seen anywhere
+-----------------------------*/
+.franchise_seen_anywhere
+{
+    border-radius: 0 0 62px 62px;
+}
+
+
+.franchise_seen_anywhere .data
+{
+    align-self: center;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_seen_anywhere .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_seen_anywhere .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_seen_anywhere .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_seen_anywhere .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_seen_anywhere .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+.franchise_seen_anywhere .image:after
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    border-radius: 44px;
+    background: linear-gradient(291deg, #fafafa 17.21%, rgba(250, 250, 250, .00) 62.31%);
+}
+
+
+.franchise_seen_anywhere .image .img1
+{
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+
+    border-radius: 46px;
+}
+
+
+.franchise_seen_anywhere .image .img2
+{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 0;
+    left: 0;
+
+    width: 240px;
+    max-width: 50%;
+    height: 490px;
+    margin: 0 auto;
+
+    transform: translateY(-50%);
+}
+
+
+
+/*----------------------
+    Franchise demand
+----------------------*/
+.franchise_demand .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+.franchise_demand .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_demand .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    letter-spacing: -1.76px;
+}
+
+
+.franchise_demand .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 24px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_demand .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 36px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_demand ul
+{
+    margin-top: 8px;
+}
+
+
+.franchise_demand ul li
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_demand ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_demand ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.franchise_demand .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    margin-left: auto;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_demand .image img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*--------------------------
+    Franchise nothing do
+--------------------------*/
+.franchise_nothing_do .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.franchise_nothing_do .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_nothing_do .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+.franchise_nothing_do .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_nothing_do .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+
+.franchise_nothing_do .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 8px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_nothing_do .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_nothing_do .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+
+/*--------------------------------
+    Franchise perfect solution
+--------------------------------*/
+.franchise_perfect_solution .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.franchise_perfect_solution .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_perfect_solution .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_perfect_solution .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_perfect_solution .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 36px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_perfect_solution ul
+{
+    margin-top: 8px;
+}
+
+
+.franchise_perfect_solution ul li
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_perfect_solution ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_perfect_solution ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.franchise_perfect_solution .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_perfect_solution .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+
+/*----------------------
+    Franchise result
+----------------------*/
+.franchise_result .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.franchise_result .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_result .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+.franchise_result .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_result .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_result .title span
+{
+    color: #68918a;
+}
+
+.franchise_result .title span.grey
+{
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_result .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 8px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_result .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+
+/*-----------------------
+    Franchise turnkey
+-----------------------*/
+.franchise_turnkey .block_head .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+}
+
+
+.franchise_turnkey .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 36px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+.franchise_turnkey .item + .item
+{
+    margin-top: 28px;
+}
+
+
+.franchise_turnkey .item .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    background: url(../images/bg_advantage_icon.jpg) 50%/cover no-repeat;
+}
+
+.franchise_turnkey .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.franchise_turnkey .item .icon + *
+{
+    align-self: center;
+
+    width: calc(100% - 104px);
+}
+
+
+.franchise_turnkey .item .title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_turnkey .item .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    width: 100%;
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_turnkey .item .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+.franchise_turnkey .item .desc ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+.franchise_turnkey .item .desc ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_turnkey .item .desc ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.franchise_turnkey .data
+{
+    position: relative;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    min-height: 450px;
+    margin-top: 28px;
+    padding: 62px;
+
+    border-radius: 46px;
+    background: linear-gradient(291deg, #fafafa 9.68%, rgba(250, 250, 250, .00) 41.58%), #68918a;
+}
+
+
+.franchise_turnkey .data .info
+{
+    width: calc(50% - 31px);
+
+    color: #fff;
+}
+
+
+.franchise_turnkey .data .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_turnkey .data .title span.grey
+{
+    color: rgba(255, 255, 255, .60);
+}
+
+
+.franchise_turnkey .data .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_turnkey .data .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(255, 255, 255, .80);
+}
+
+
+.franchise_turnkey .data .img
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    min-width: 200px;
+    min-height: 200px;
+
+    pointer-events: none;
+}
+
+
+
+/*--------------------
+    Franchise help
+--------------------*/
+.franchise_help .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -28px;
+    margin-left: -28px;
+}
+
+.franchise_help .row > *
+{
+    width: calc(33.333% - 28px);
+    margin-bottom: 28px;
+    margin-left: 28px;
+}
+
+
+.franchise_help .item
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 36px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_help .item.border
+{
+    padding: 34px;
+
+    border: 2px solid rgba(11, 19, 18, .04);
+    background: none;
+}
+
+
+.franchise_help .item .name
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_help .item .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_help .item .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+.franchise_help .item .desc ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+.franchise_help .item .desc ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_help .item .desc ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+.franchise_help .item .thumb
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+
+.franchise_help .item .thumb img
+{
+    display: block;
+
+    min-width: 200px;
+    max-width: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+
+
+/*------------------------------
+    Franchise provide orders
+------------------------------*/
+.franchise_provide_orders
+{
+    padding-top: 62px;
+}
+
+
+.franchise_provide_orders .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+}
+
+
+.franchise_provide_orders .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    min-height: 491px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_provide_orders .image > img
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    max-width: calc(100% - 48px);
+}
+
+
+.franchise_provide_orders .youtube_info
+{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 407px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    padding: 12px;
+
+    color: #fff;
+    border-radius: 130px;
+    background: rgba(244, 246, 245, .32);
+    box-shadow: inset 0 1px rgba(255, 255, 255, .25);
+
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+}
+
+
+.franchise_provide_orders .youtube_info .logo
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.franchise_provide_orders .youtube_info .logo img
+{
+    display: block;
+
+    width: 38px;
+    height: 38px;
+}
+
+
+.franchise_provide_orders .youtube_info .logo + *
+{
+    align-self: center;
+
+    width: calc(100% - 76px);
+}
+
+
+.franchise_provide_orders .youtube_info .name
+{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+
+    letter-spacing: -.88px;
+
+    color: #fff;
+}
+
+
+.franchise_provide_orders .youtube_info .stats
+{
+    font-size: 13px;
+    line-height: 150%;
+
+    letter-spacing: -.13px;
+
+    color: rgba(255, 255, 255, .60);
+}
+
+.franchise_provide_orders .youtube_info .stats span
+{
+    color: #fff;
+}
+
+.franchise_provide_orders .youtube_info .stats span ~ span
+{
+    margin-left: 10px;
+}
+
+
+.franchise_provide_orders .data
+{
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_provide_orders .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_provide_orders .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_provide_orders .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_provide_orders ul
+{
+    margin-top: 8px;
+}
+
+
+.franchise_provide_orders ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+.franchise_provide_orders ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_provide_orders ul li:before
+{
+    position: absolute;
+    top: 13px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
+}
+
+
+
+/*----------------------
+    Franchise source
+----------------------*/
+.franchise_source .data
+{
+    align-self: center;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_source .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+
+.franchise_source .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_source .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_source .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    height: 384px;
+    margin-left: auto;
+}
+
+.franchise_source .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+
+/*---------------------
+    Franchise bonus
+---------------------*/
+.franchise_bonus .data
+{
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_bonus .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_bonus .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_bonus .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_bonus .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_bonus .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+.franchise_bonus .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    height: 384px;
+}
+
+.franchise_bonus .image img
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+}
+
+
+
+/*------------------------
+    Franchise in touch
+------------------------*/
+.franchise_in_touch .block_head .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+}
+
+
+.franchise_in_touch .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -28px;
+    margin-left: -28px;
+}
+
+.franchise_in_touch .row > *
+{
+    width: calc(33.333% - 28px);
+    margin-bottom: 28px;
+    margin-left: 28px;
+}
+
+
+.franchise_in_touch .item
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 453px;
+    padding: 36px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_in_touch .item.border
+{
+    padding: 34px;
+
+    border: 2px solid rgba(11, 19, 18, .04);
+    background: none;
+}
+
+
+.franchise_in_touch .item .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+.franchise_in_touch .item .desc > * + *
+{
+    margin-top: 8px;
+}
+
+
+.franchise_in_touch .item .desc b
+{
+    font-weight: 600;
+
+    color: var(--text_color);
+}
+
+
+.franchise_in_touch .item .desc ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    list-style-type: none;
+}
+
+.franchise_in_touch .item .desc ul li + li
+{
+    margin-top: 8px;
+}
+
+.franchise_in_touch .item .desc ul li:before
+{
+    position: absolute;
+    top: 14px;
+    left: 4px;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: var(--text_color);
+}
+
+
+.franchise_in_touch .item .thumb
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    max-width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+
+.franchise_in_touch .item .thumb img
+{
+    display: block;
+
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+
+
+/*--------------------------------
+    Franchise related business
+--------------------------------*/
+.franchise_related_business .cont
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.franchise_related_business .image
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_related_business .image img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
+.franchise_related_business .data
+{
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_related_business .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_related_business .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_related_business .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 36px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_related_business .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+
+/*-------------------------
+    Franchise summarize
+-------------------------*/
+.franchise_summarize
+{
+    padding: 94px 0;
+
+    border-radius: 62px;
+}
+
+
+.franchise_summarize .block
+{
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+.franchise_summarize .image
+{
+    position: relative;
+
+    width: calc(50% - 31px);
+    min-height: 384px;
+}
+
+.franchise_summarize .image.big
+{
+    min-height: 517px;
+}
+
+
+.franchise_summarize .image img
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+
+    mix-blend-mode: darken;
+}
+
+
+.franchise_summarize .data
+{
+    align-self: center;
+
+    width: calc(50% - 31px);
+}
+
+
+.franchise_summarize .head
+{
+    margin-bottom: 48px;
+}
+
+.franchise_summarize .head .sub_title
+{
+    margin-top: 0;
+}
+
+
+.franchise_summarize .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 24px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_summarize .title.no_margin
+{
+    margin-bottom: 0;
+}
+
+
+.franchise_summarize .title span
+{
+    color: #68918a;
+}
+
+.franchise_summarize .title span.grey
+{
+    color: rgba(11, 19, 18, .20);
+}
+
+
+.franchise_summarize .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 36px;
+
+    letter-spacing: -.52px;
+}
+
+.franchise_summarize .sub_title span
+{
+    color: #68918a;
+}
+
+
+.franchise_summarize .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    margin-top: 8px;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+
+/*-------------------------
+    .franchise required
+-------------------------*/
+.franchise_required .row
+{
+    align-content: stretch;
+    align-items: stretch;
+
+    margin-bottom: -28px;
+    margin-left: -28px;
+}
+
+.franchise_required .row > *
+{
+    width: calc(33.333% - 28px);
+    margin-bottom: 28px;
+    margin-left: 28px;
+}
+
+
+.franchise_required .item
+{
+    position: relative;
+
+    height: 461px;
+    padding: 36px;
+
+    border-radius: 46px;
+    background: rgba(11, 19, 18, .02);
+}
+
+
+.franchise_required .item .name
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_required .item .thumb
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+
+.franchise_required .item .thumb img
+{
+    display: block;
+
+    min-width: 100px;
+    max-width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+
+
+/*---------------------------
+    Franchise not for all
+---------------------------*/
+.franchise_not_for_all
+{
+    margin-bottom: 94px;
+}
+
+
+.franchise_not_for_all .data
+{
+    width: calc(50% - 31px);
+}
+
+
+.franchise_not_for_all .title
+{
+    font-size: calc(var(--font_size_title) - 4px);
+    font-weight: 700;
+    line-height: 110%;
+
+    margin-bottom: 36px;
+
+    letter-spacing: -1.76px;
+}
+
+.franchise_not_for_all .title span
+{
+    color: #68918a;
+}
+
+
+.franchise_not_for_all .sub_title
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-top: 8px;
+
+    letter-spacing: -.52px;
+}
+
+
+.franchise_not_for_all .desc
+{
+    font-size: 20px;
+    line-height: 150%;
+
+    letter-spacing: .4px;
+
+    color: rgba(11, 19, 18, .60);
+}
+
+
+.franchise_not_for_all .link
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 62px;
+}
+
+
+.franchise_not_for_all .link a
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 125%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 10px 10px 10px 22px;
+
+    transition: .2s linear;
+    text-decoration: none;
+    letter-spacing: -.52px;
+
+    color: var(--text_color);
+    border: 2px solid var(--text_color);
+    border-radius: 80px;
+}
+
+
+.franchise_not_for_all .link span
+{
+    position: relative;
+    top: -2px;
+}
+
+
+.franchise_not_for_all .link .icon
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+
+    transition: .2s linear;
+
+    color: #fff;
+    border-radius: 50%;
+    background: var(--text_color);
+}
+
+.franchise_not_for_all .link .icon svg
+{
+    display: block;
+
+    width: 10px;
+    height: 16px;
+}
+
+
+.franchise_not_for_all .link a:hover
+{
+    color: #fff;
+    border-color: #68918a;
+    background: #68918a;
+}
+
+.franchise_not_for_all .link a:hover .icon
+{
+    color: #68918a;
+    background: #fff;
+}
+
+
+.franchise_not_for_all .image
+{
+    width: calc(50% - 31px);
+    margin-left: auto;
+}
+
+
+.franchise_not_for_all .image img
+{
+    display: block;
+
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+
 /*------------
     Footer
 ------------*/
@@ -12355,6 +14733,11 @@ footer
     position: relative;
 
     padding: 124px 0;
+}
+
+footer.bg
+{
+    background: rgba(7, 10, 9, .03);
 }
 
 

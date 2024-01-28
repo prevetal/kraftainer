@@ -6121,6 +6121,1343 @@
 
 
 
+    /*--------------------------
+        Franchise advantages
+    --------------------------*/
+    .franchise_advantages .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .franchise_advantages .row > *
+    {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+
+    .franchise_advantages .item
+    {
+        padding: 23px 35px;
+
+        border-radius: 24px;
+    }
+
+
+    .franchise_advantages .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_advantages .item .desc
+    {
+        font-size: var(--font_size);
+
+        color: #0b1312;
+    }
+
+
+    .franchise_advantages .item .icon
+    {
+        width: 72px;
+        height: 68px;
+    }
+
+
+
+    /*---------------------------
+        Franchise give orders
+    ---------------------------*/
+    .franchise_give_orders .block_head .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_give_orders .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    .franchise_give_orders .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+    .franchise_give_orders .item
+    {
+        min-height: 269px;
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+
+    .franchise_give_orders .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_give_orders .item .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*---------------------
+        Franchise minus
+    ---------------------*/
+    .franchise_minus .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_minus .data .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_minus .data .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_minus .data .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_minus .person
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .franchise_minus .person .avatar
+    {
+        width: 58px;
+        height: 115px;
+    }
+
+    .franchise_minus .person .avatar + *
+    {
+        width: calc(100% - 68px);
+    }
+
+
+    .franchise_minus .image
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    .franchise_minus .image > img
+    {
+        position: relative;
+    }
+
+
+    .franchise_minus .info
+    {
+        bottom: 16px;
+        left: 16px;
+
+        width: calc(100% - 32px);
+        min-height: 139px;
+        padding: 12px;
+
+        background: rgba(11, 19, 18, .80);
+
+        -webkit-backdrop-filter: blur(18px);
+                backdrop-filter: blur(18px);
+    }
+
+    .franchise_minus .info:before
+    {
+        position: absolute;
+        right: 32px;
+        bottom: 100%;
+
+        display: block;
+
+        width: 20px;
+        height: 16px;
+
+        content: '';
+
+        border-right: 10px solid transparent;
+        border-bottom: 16px solid rgba(11, 19, 18, .80);
+        border-left: 10px solid transparent;
+    }
+
+
+    .franchise_minus .info .icon
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+    .franchise_minus .info .icon img
+    {
+        width: 30px;
+    }
+
+
+    .franchise_minus .info .name
+    {
+        font-size: 16px;
+        font-weight: 500;
+
+        width: calc(100% - 56px);
+    }
+
+
+    .franchise_minus .info .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+
+        color: rgba(255, 255, 255, .60);
+    }
+
+
+    .franchise_minus .info .bg
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------------
+        Franchise first of all
+    ----------------------------*/
+    .franchise_first_of_all
+    {
+        border-radius: 32px 32px 0 0;
+    }
+
+
+    .franchise_first_of_all .data
+    {
+        width: 100%;
+        min-height: 0;
+    }
+
+
+    .franchise_first_of_all .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_first_of_all ul li
+    {
+        font-size: var(--font_size);
+    }
+
+    .franchise_first_of_all ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_first_of_all ul li:before
+    {
+        top: 10px;
+    }
+
+
+    .franchise_first_of_all .image
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .franchise_first_of_all .image img
+    {
+        position: relative;
+    }
+
+
+
+    /*---------------------------
+        Franchise transaction
+    ---------------------------*/
+    .franchise_transaction .image
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+    .franchise_transaction .image img
+    {
+        position: relative;
+    }
+
+
+    .franchise_transaction .data
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+    .franchise_transaction .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        letter-spacing: -1.04px;
+    }
+
+    .franchise_transaction .title br
+    {
+        display: none;
+    }
+
+    .franchise_transaction .title span
+    {
+        display: block;
+    }
+
+
+
+    /*-----------------------------
+        Franchise seen anywhere
+    -----------------------------*/
+    .franchise_seen_anywhere
+    {
+        border-radius: 0 0 32px 32px;
+    }
+
+
+    .franchise_seen_anywhere .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_seen_anywhere .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_seen_anywhere .sub_title
+    {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    .franchise_seen_anywhere .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_seen_anywhere .image
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .franchise_seen_anywhere .image:after
+    {
+        border-radius: 22px;
+    }
+
+
+    .franchise_seen_anywhere .image .img1
+    {
+        border-radius: 24px;
+    }
+
+
+    .franchise_seen_anywhere .image .img2
+    {
+        right: auto;
+        bottom: -12px;
+        left: 12px;
+
+        width: auto;
+        height: 239px;
+        margin: 0;
+    }
+
+
+
+    /*----------------------
+        Franchise demand
+    ----------------------*/
+    .franchise_demand .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_demand .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_demand .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 6px;
+    }
+
+
+    .franchise_demand .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 18px;
+    }
+
+
+    .franchise_demand ul li
+    {
+        font-size: var(--font_size);
+    }
+
+    .franchise_demand ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_demand ul li:before
+    {
+        top: 10px;
+    }
+
+
+    .franchise_demand .image
+    {
+        width: 100%;
+        height: 266px;
+        margin-top: 32px;
+        margin-left: 0;
+
+        border-radius: 24px;
+    }
+
+
+    .franchise_demand .image img
+    {
+        max-width: calc(100% + 40px);
+        max-height: calc(100% + 40px);
+    }
+
+
+
+    /*--------------------------
+        Franchise nothing do
+    --------------------------*/
+    .franchise_nothing_do .image
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .franchise_nothing_do .image img
+    {
+        position: relative;
+    }
+
+
+    .franchise_nothing_do .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_nothing_do .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_nothing_do .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_nothing_do .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*--------------------------------
+        Franchise perfect solution
+    --------------------------------*/
+    .franchise_perfect_solution .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_perfect_solution .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 6px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_perfect_solution .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 18px;
+    }
+
+
+    .franchise_perfect_solution ul
+    {
+        margin-top: 4px;
+    }
+
+
+    .franchise_perfect_solution ul li
+    {
+        font-size: var(--font_size);
+    }
+
+    .franchise_perfect_solution ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_perfect_solution ul li:before
+    {
+        top: 10px;
+    }
+
+
+    .franchise_perfect_solution .image
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .franchise_perfect_solution .image img
+    {
+        position: relative;
+    }
+
+
+
+    /*----------------------
+        Franchise result
+    ----------------------*/
+    .franchise_result .image
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .franchise_result .image img
+    {
+        position: relative;
+    }
+
+
+    .franchise_result .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_result .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_result .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_result .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*-----------------------
+        Franchise turnkey
+    -----------------------*/
+    .franchise_turnkey .block_head .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_turnkey .item
+    {
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+    .franchise_turnkey .item + .item
+    {
+        margin-top: 16px;
+    }
+
+
+    .franchise_turnkey .item .icon
+    {
+        width: 38px;
+        height: 38px;
+        padding: 8px;
+    }
+
+    .franchise_turnkey .item .icon + *
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .franchise_turnkey .item .title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_turnkey .item .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .franchise_turnkey .item .desc ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_turnkey .item .desc ul li:before
+    {
+        top: 10px;
+    }
+
+
+    .franchise_turnkey .data
+    {
+        overflow: hidden;
+
+        min-height: 624px;
+        margin-top: 32px;
+        padding: 32px;
+
+        border-radius: 32px;
+    }
+
+
+    .franchise_turnkey .data .info
+    {
+        width: 100%;
+    }
+
+
+    .franchise_turnkey .data .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_turnkey .data .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_turnkey .data .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_turnkey .data .img
+    {
+        right: auto;
+        left: 50%;
+
+        max-width: 140%;
+        margin: 0 auto;
+
+        transform: translateX(-50%);
+    }
+
+
+
+    /*--------------------
+        Franchise help
+    --------------------*/
+    .franchise_help .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .franchise_help .row > *
+    {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+
+    .franchise_help .item
+    {
+        min-height: 314px;
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+    .franchise_help .item.border
+    {
+        padding: 23px;
+    }
+
+
+    .franchise_help .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_help .item .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_help .item .desc ul li
+    {
+        font-size: var(--font_size);
+    }
+
+    .franchise_help .item .desc ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_help .item .desc ul li:before
+    {
+        top: 10px;
+    }
+
+
+
+    /*------------------------------
+        Franchise provide orders
+    ------------------------------*/
+    .franchise_provide_orders
+    {
+        padding-top: 0;
+    }
+
+
+    .franchise_provide_orders .image
+    {
+        order: 2;
+
+        width: 100%;
+        min-height: 266px;
+        margin-top: 32px;
+
+        border-radius: 24px;
+    }
+
+
+    .franchise_provide_orders .image > img
+    {
+        left: 0;
+
+        margin: 0 auto;
+    }
+
+
+    .franchise_provide_orders .youtube_info
+    {
+        bottom: 22px;
+
+        padding: 8px;
+    }
+
+
+    .franchise_provide_orders .youtube_info .logo
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+    .franchise_provide_orders .youtube_info .logo img
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+    .franchise_provide_orders .youtube_info .logo + *
+    {
+        width: calc(100% - 52px);
+    }
+
+
+    .franchise_provide_orders .youtube_info .name
+    {
+        font-size: 15px;
+
+        letter-spacing: -.603px;
+    }
+
+
+    .franchise_provide_orders .youtube_info .stats
+    {
+        font-size: 10px;
+
+        letter-spacing: -.089px;
+    }
+
+    .franchise_provide_orders .youtube_info .stats span ~ span
+    {
+        margin-left: 5px;
+    }
+
+
+    .franchise_provide_orders .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_provide_orders .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_provide_orders .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_provide_orders ul
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_provide_orders ul li
+    {
+        font-size: var(--font_size);
+
+        color: rgba(11, 19, 18, .60);
+    }
+
+    .franchise_provide_orders ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_provide_orders ul li:before
+    {
+        top: 9px;
+    }
+
+
+
+    /*----------------------
+        Franchise source
+    ----------------------*/
+    .franchise_source .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_source .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_source .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_source .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_source .image
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    .franchise_source .image img
+    {
+        position: relative;
+    }
+
+
+
+    /*---------------------
+        Franchise bonus
+    ---------------------*/
+    .franchise_bonus .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_bonus .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_bonus .sub_title
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_bonus .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_bonus .image
+    {
+        order: 2;
+
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .franchise_bonus .image img
+    {
+        position: relative;
+    }
+
+
+
+    /*------------------------
+        Franchise in touch
+    ------------------------*/
+    .franchise_in_touch .block_head .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
+    .franchise_in_touch .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .franchise_in_touch .row > *
+    {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+
+    .franchise_in_touch .item
+    {
+        height: 310px;
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+    .franchise_in_touch .item.border
+    {
+        padding: 23px;
+    }
+
+
+    .franchise_in_touch .item .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_in_touch .item .desc ul li + li
+    {
+        margin-top: 4px;
+    }
+
+    .franchise_in_touch .item .desc ul li:before
+    {
+        top: 9px;
+    }
+
+
+
+    /*--------------------------------
+        Franchise related business
+    --------------------------------*/
+    .franchise_related_business .image
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+    .franchise_related_business .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_related_business .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_related_business .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 18px;
+    }
+
+
+    .franchise_related_business .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*-------------------------
+        Franchise summarize
+    -------------------------*/
+    .franchise_summarize
+    {
+        padding: 68px 0;
+
+        border-radius: 32px;
+    }
+
+
+    .franchise_summarize .image,
+    .franchise_summarize .image.big
+    {
+        order: 2;
+
+        width: 100%;
+        min-height: 0;
+        margin-top: 20px;
+    }
+
+
+    .franchise_summarize .image img
+    {
+        position: relative;
+    }
+
+
+    .franchise_summarize .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_summarize .head
+    {
+        margin-bottom: 18px;
+    }
+
+
+    .franchise_summarize .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_summarize .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 18px;
+    }
+
+
+    .franchise_summarize .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 4px;
+    }
+
+
+
+    /*-------------------------
+        .franchise required
+    -------------------------*/
+    .franchise_required .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .franchise_required .row > *
+    {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+
+    .franchise_required .item
+    {
+        overflow: hidden;
+
+        height: 247px;
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+
+    .franchise_required .item .name
+    {
+        font-size: 16px;
+    }
+
+
+    .franchise_required .item .thumb
+    {
+        right: 24px;
+        bottom: -60px;
+        left: auto;
+
+        max-width: calc(100% - 100px);
+        margin: 0;
+    }
+
+
+
+    /*---------------------------
+        Franchise not for all
+    ---------------------------*/
+    .franchise_not_for_all
+    {
+        margin-bottom: 0;
+    }
+
+
+    .franchise_not_for_all .data
+    {
+        width: 100%;
+    }
+
+
+    .franchise_not_for_all .title
+    {
+        font-size: var(--font_size_title);
+        font-weight: 800;
+
+        margin-bottom: 18px;
+
+        letter-spacing: -1.04px;
+    }
+
+
+    .franchise_not_for_all .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 4px;
+    }
+
+
+    .franchise_not_for_all .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .franchise_not_for_all .link
+    {
+        margin-top: 22px;
+    }
+
+
+    .franchise_not_for_all .link a
+    {
+        font-size: 18px;
+
+        width: 100%;
+
+        letter-spacing: -.72px;
+    }
+
+
+    .franchise_not_for_all .link .icon
+    {
+        width: 28px;
+        height: 28px;
+        margin-left: auto;
+    }
+
+    .franchise_not_for_all .link .icon svg
+    {
+        width: 8px;
+        height: 14px;
+    }
+
+
+    .franchise_not_for_all .image
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
