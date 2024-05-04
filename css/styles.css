@@ -16248,6 +16248,56 @@ header .phone a
 }
 
 
+.project_info .mob_price
+{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 110%;
+
+    display: none;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 12px;
+
+    white-space: nowrap;
+    letter-spacing: -1.04px;
+
+    color: #1d1d1b;
+}
+
+
+.project_info .mob_price .old
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    margin-left: 12px;
+
+    text-decoration: line-through;
+    letter-spacing: -.64px;
+
+    color: #b3b3ad;
+}
+
+
+.project_info .mob_price .discount
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    margin-left: 6px;
+
+    letter-spacing: -.64px;
+
+    color: #68918a;
+}
+
+
 .project_info .features
 {
     margin-top: 16px;

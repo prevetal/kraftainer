@@ -7904,6 +7904,12 @@
     }
 
 
+    .project_info .mob_price
+    {
+        display: flex;
+    }
+
+
     .project_info .features,
     .project_info .equipment
     {
