@@ -7641,12 +7641,6 @@
 
 
 
-    .projects .content_row
-    {
-        margin-bottom: 40px;
-    }
-
-
     .projects .content_row aside
     {
         display: none;
@@ -7677,7 +7671,8 @@
     }
 
 
-    .projects .grid > *
+    .projects .grid > *,
+    .projects .content .grid > *
     {
         width: calc(50% - 16px);
         margin-bottom: 24px;
@@ -7754,6 +7749,13 @@
     .projects .project .price .discount
     {
         display: none;
+    }
+
+
+
+    .projects .text_block
+    {
+        margin-top: 40px;
     }
 
 

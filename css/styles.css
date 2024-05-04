@@ -15070,12 +15070,6 @@ header .phone a
 
 
 
-.projects .content_row
-{
-    margin-bottom: 62px;
-}
-
-
 .projects .content_row.row
 {
     align-content: stretch;
@@ -15591,6 +15585,13 @@ header .phone a
     letter-spacing: -.64px;
 
     color: #68918a;
+}
+
+
+
+.projects .text_block
+{
+    margin-top: 62px;
 }
 
 
