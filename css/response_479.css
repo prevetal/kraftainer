@@ -43,4 +43,36 @@
 
         gap: 12px;
     }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .categories .row
+    {
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+        padding: 0 15px;
+
+        scroll-padding: 0 15px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .images .big
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+    .project_info .buy .stickers
+    {
+        left: 15px;
+    }
 }

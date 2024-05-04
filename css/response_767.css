@@ -84,6 +84,28 @@
     }
 
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 15px;
+        right: 15px;
+
+        width: 38px;
+        height: 38px;
+
+        color: #b3b3b3;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close svg
+    {
+        width: 28px;
+        height: 28px;
+
+        stroke-width: 1px;
+        filter: none;
+    }
+
+
 
     /*---------------
         Animation
@@ -97,6 +119,16 @@
     .animate.delay7
     {
         transition-delay: 0s;
+    }
+
+
+
+    /*-------------------
+        Mob. all link
+    -------------------*/
+    .mob_all_link
+    {
+        display: block;
     }
 
 
@@ -263,6 +295,12 @@
     }
 
 
+    .block_head .all_link
+    {
+        display: none;
+    }
+
+
 
     /*------------------
         Form elements
@@ -342,6 +380,35 @@
         margin-top: 12px;
 
         letter-spacing: .12px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 14px;
+        line-height: 150%;
+
+        letter-spacing: .28px;
+
+        color: rgba(7, 10, 9, .60);
+    }
+
+
+    .text_block h1
+    {
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 110%;
+
+        margin-bottom: 12px !important;
+
+        letter-spacing: -1.04px;
+
+        color: #070a09;
     }
 
 
@@ -6162,8 +6229,8 @@
 
     .franchise_advantages .item .icon
     {
-        width: 72px;
-        height: 68px;
+        /*width: 72px;
+        height: 68px;*/
     }
 
 
@@ -6424,6 +6491,13 @@
     .franchise_transaction .image img
     {
         position: relative;
+
+        width: 100%;
+    }
+
+    .franchise_transaction .image:before
+    {
+        display: none;
     }
 
 
@@ -7355,7 +7429,7 @@
     {
         overflow: hidden;
 
-        height: 247px;
+        height: 288px;
         padding: 24px;
 
         border-radius: 24px;
@@ -7458,6 +7532,632 @@
 
 
 
+    /*-----------------
+        Breadcrumbs
+    -----------------*/
+    .breadcrumbs
+    {
+        font-size: 14px;
+        line-height: 150%;
+
+        margin-bottom: 32px;
+
+        letter-spacing: -.28px;
+    }
+
+
+    .breadcrumbs .arr
+    {
+        width: 6px;
+        height: 12px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects.bg
+    {
+        padding: 40px 0 60px;
+    }
+
+
+
+    .projects .mob_head
+    {
+        display: flex;
+    }
+
+
+
+    .projects .categories
+    {
+        margin-bottom: 40px;
+        padding: 0;
+
+        border: none;
+    }
+
+
+    .projects .categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .projects .categories .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .projects .categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .projects .categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+    .projects .categories .row > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .projects .categories a
+    {
+        font-size: 14px;
+        line-height: 150%;
+
+        letter-spacing: -.28px;
+    }
+
+
+
+    .projects .content_row
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .projects .content_row aside
+    {
+        display: none;
+
+        width: 100%;
+    }
+
+
+    .projects .content_row .content
+    {
+        width: 100%;
+    }
+
+
+
+    .projects .filter_selected,
+    .projects .head
+    {
+        display: none;
+    }
+
+
+
+    .projects .grid
+    {
+        margin-bottom: -24px;
+        margin-left: -16px;
+    }
+
+
+    .projects .grid > *
+    {
+        width: calc(50% - 16px);
+        margin-bottom: 24px;
+        margin-left: 16px;
+    }
+
+
+    .projects .project
+    {
+        border: none;
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .projects .project .thumb
+    {
+        padding-bottom: 90.361%;
+
+        border-radius: 12px;
+    }
+
+
+    .projects .project .thumb img
+    {
+        border-radius: inherit;
+    }
+
+
+    .projects .project .stickers
+    {
+        bottom: 12px;
+        left: 12px;
+    }
+
+
+    .projects .project .like_btn
+    {
+        display: none;
+    }
+
+
+    .projects .project .info
+    {
+        padding: 8px 0 0;
+    }
+
+
+    .projects .project .name
+    {
+        font-size: 16px;
+
+        letter-spacing: 0;
+    }
+
+
+    .projects .project .features
+    {
+        display: none;
+    }
+
+
+    .projects .project .price
+    {
+        font-size: 24px;
+
+        margin-top: 0;
+
+        letter-spacing: -.96px;
+    }
+
+
+    .projects .project .price .old,
+    .projects .project .price .discount
+    {
+        display: none;
+    }
+
+
+
+    /*---------------------
+        Projects filter
+    ---------------------*/
+    .projects_filter .name
+    {
+        font-size: 16px;
+
+        letter-spacing: -.32px;
+    }
+
+
+    .projects_filter .field + .field.big_m
+    {
+        margin-top: 8px;
+    }
+
+
+    .projects_filter .label
+    {
+        font-size: 14px;
+    }
+
+
+    .projects_filter .input
+    {
+        font-size: 14px;
+    }
+
+
+    .projects_filter .checkbox,
+    .projects_filter .radio
+    {
+        font-size: 14px;
+        line-height: 24px;
+
+        min-height: 24px;
+        padding-left: 28px;
+    }
+
+
+    .projects_filter .checkbox .check,
+    .projects_filter .radio .check
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .projects_filter .spoler_btn
+    {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    .projects_filter .submit
+    {
+        margin-top: 32px;
+    }
+
+
+    .projects_filter .submit_btn
+    {
+        font-size: 16px;
+
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info
+    {
+        position: relative;
+
+        padding-top: 15px;
+    }
+
+
+    .project_info .breadcrumbs
+    {
+        display: none;
+    }
+
+
+    .project_info .images
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .project_info .images .big
+    {
+        overflow: visible;
+
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+
+        border-radius: 0;
+    }
+
+
+    .project_info .images .thumbs
+    {
+        display: none;
+    }
+
+
+    .project_info .images .big .image
+    {
+        padding-bottom: 344px;
+    }
+
+
+    .project_info .images .swiper
+    {
+        overflow: visible !important;
+    }
+
+
+    .project_info .images .swiper-pagination
+    {
+        display: flex;
+    }
+
+
+    .project_info .data
+    {
+        width: 100%;
+    }
+
+
+    .project_info .project_name
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        letter-spacing: -.88px;
+    }
+
+
+    .project_info .features,
+    .project_info .equipment
+    {
+        margin-top: 32px;
+    }
+
+
+    .project_info .features .items > *,
+    .project_info .equipment .items > *
+    {
+        font-size: 16px;
+    }
+
+
+    .project_info .equipment .items > * + *
+    {
+        margin-top: 4px;
+    }
+
+
+
+    .project_info .buy
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    .project_info .buy > *
+    {
+        position: static;
+
+        padding: 20px;
+    }
+
+
+    .project_info .buy .stickers
+    {
+        top: 376px;
+        left: 24px;
+    }
+
+
+    .project_info .buy .sticker
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        padding: 0 6px 2px;
+
+        border-radius: 4px;
+    }
+
+
+    .project_info .buy .price
+    {
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+
+    .project_info .buy .price .discount,
+    .project_info .buy .price .old
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .project_info .buy .order
+    {
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+
+
+    .project_info .buy .order .title
+    {
+        font-size: 16px;
+        font-weight: 400;
+
+        margin-bottom: 18px;
+    }
+
+
+    .project_info .buy .order .submit_btn
+    {
+        font-size: 18px;
+        line-height: 130%;
+
+        padding-left: 18px;
+    }
+
+
+
+    /*------------------
+        Project data
+    ------------------*/
+    .project_data .block_head
+    {
+        display: none;
+    }
+
+
+    .project_data .tabs
+    {
+        display: none;
+    }
+
+
+    .project_data .mob_title
+    {
+        display: block;
+    }
+
+
+    .project_data .tab_content
+    {
+        visibility: visible;
+        overflow: visible;
+
+        width: 100%;
+        height: auto;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .project_data .tab_content.active
+    {
+        width: 100%;
+        padding-left: 0;
+
+        border: none;
+    }
+
+
+    .project_data .gallery
+    {
+        overflow: visible;
+
+        margin-top: 0;
+        padding-top: 0;
+        padding-right: 15px;
+    }
+
+
+    .project_data .gallery .swiper-button-next,
+    .project_data .gallery .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+
+    .project_data .peculiarities .items
+    {
+        width: 100%;
+    }
+
+
+    .project_data .peculiarities .items > *
+    {
+        font-size: 16px;
+    }
+
+
+    .project_data .peculiarities .tags
+    {
+        width: 100%;
+        margin-top: 32px;
+
+        gap: 8px;
+    }
+
+
+    .project_data .peculiarities .tags > *
+    {
+        font-size: 14px;
+        line-height: 150%;
+
+        padding: 8px 16px;
+
+        letter-spacing: -.28px;
+
+        border-radius: 8px;
+    }
+
+
+
+    .project_data .equipment .row
+    {
+        margin-bottom: -24px;
+        margin-left: -13px;
+    }
+
+
+    .project_data .equipment .row > *
+    {
+        width: calc(50% - 13px);
+        margin-bottom: 24px;
+        margin-left: 13px;
+    }
+
+
+    .project_data .equipment .item
+    {
+        border: none;
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .project_data .equipment .item .thumb
+    {
+        padding-bottom: 90.361%;
+
+        border-radius: 12px;
+    }
+
+
+    .project_data .equipment .item .thumb img
+    {
+        border-radius: inherit;
+    }
+
+
+    .project_data .equipment .item .info
+    {
+        margin-top: 8px;
+        padding: 0;
+    }
+
+
+    .project_data .equipment .item .name
+    {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+
+    .project_data .equipment .item .price
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-top: 0;
+
+        letter-spacing: -.96px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -7468,6 +8168,11 @@
         padding-bottom: 68px;
 
         border-top: 2px solid rgba(7, 10, 9, .03);
+    }
+
+    footer.no_m
+    {
+        margin-top: 0;
     }
 
 
@@ -7605,5 +8310,10 @@
     .what_guarantees .slider .item .thumb img
     {
         position: relative;
+    }
+
+    .franchise_seen_anywhere .image .img3
+    {
+        display: none;
     }
 }

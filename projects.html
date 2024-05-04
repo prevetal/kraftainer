@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#070A09">
+		<meta name="theme-color" content="#070A09">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/intlTelInput.min.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="scroll">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.svg" alt="">
+							</a>
+
+							<nav class="menu row">
+								<div class="menu_item">
+									<a href="/">Главная</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Для жизни и отдыха</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Для бизнеса</a>
+								</div>
+
+								<div class="menu_item">
+									<a class="active">О нас</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Стоимость и варианты</a>
+								</div>
+
+								<div class="menu_item">
+									<a href="/">Контакты</a>
+								</div>
+							</nav>
+
+							<div class="city">
+								<button class="btn modal_btn" data-modal="city_modal">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+									<span>Москва</span>
+								</button>
+							</div>
+
+							<div class="phone">
+								<a href="tel:88006003855">8 800 600 38 55</a>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="first_section block small">
+					<div class="cont">
+						<div class="data">
+							<h1 class="title animate fadeInUp">Индивидуальные<br> кулинарные пространства</h1>
+
+							<div class="desc">Откройте мир творчества и функциональности с нашим разнообразием отдельных кухонь</div>
+
+							<div class="link">
+								<a href="/">
+									<span>Рассчитать стоимость</span>
+
+									<div class="icon">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a>
+							</div>
+
+							<img data-src="images/tmp/bg_page_head_projects.jpg" alt="" class="bg lazyload">
+							<img data-src="images/tmp/mob_bg_page_head_projects.jpg" alt="" class="mob_bg lazyload">
+						</div>
+					</div>
+				</section>
+
+
+				<section class="projects bg">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<div>
+								<a href="/">
+									<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									<span>Проекты и цены</span>
+								</a>
+							</div>
+
+							<div class="sep"></div>
+
+							<div>Отдельная кухня</div>
+						</div>
+
+
+						<div class="mob_head">
+							<button class="sort_btn modal_btn" data-modal="sort_modal">Популярные</button>
+
+							<button class="filter_btn modal_btn" data-modal="filter_modal">
+								<div class="icon">
+									<svg><use xlink:href="images/sprite.svg#ic_filter"></use></svg>
+									<span class="count">13</span>
+								</div>
+
+								<span>Фильтры</span>
+							</button>
+						</div>
+
+
+						<div class="categories">
+							<div class="row">
+								<div><a href="/">40 футов</a></div>
+
+								<div><a href="/">20 футов</a></div>
+
+								<div><a href="/">Отдельная спальня</a></div>
+
+								<div><a class="active">Отдельная кухня</a></div>
+
+								<div><a href="/">Веранда</a></div>
+
+								<div><a href="/">Терраса</a></div>
+
+								<div><a href="/">Дачный</a></div>
+
+								<div><a href="/">Кофейни</a></div>
+
+								<div><a href="/">Фастфуд</a></div>
+
+								<div><a href="/">Цветочный</a></div>
+
+								<div><a href="/">Офис</a></div>
+							</div>
+						</div>
+
+
+						<section class="content_row row">
+							<aside>
+								<div class="projects_filter" id="filter_modal">
+									<form action="">
+										<div class="item">
+											<div class="name">Стоимость <span>₽</span></div>
+
+											<div class="data">
+												<div class="field">
+													<div class="label">от</div>
+
+													<input type="number" name="" value="" class="input" placeholder="1 000 000">
+												</div>
+
+												<div class="field big_m">
+													<div class="label">до</div>
+
+													<input type="number" name="" value="" class="input" placeholder="99 999 999">
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Площадь <span>м²</span></div>
+
+											<div class="data">
+												<div class="field">
+													<div class="label">от</div>
+
+													<input type="number" name="" value="" class="input" placeholder="0">
+												</div>
+
+												<div class="field big_m">
+													<div class="label">до</div>
+
+													<input type="number" name="" value="" class="input" placeholder="0">
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Размер</div>
+
+											<div class="data">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group1">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>40 футов</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group1">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>20 футов</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Тип</div>
+
+											<div class="data">
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group2">
+														<div class="check"></div>
+														<div>Жилой</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group2">
+														<div class="check"></div>
+														<div>Бизнес</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group2" checked>
+														<div class="check"></div>
+														<div>Любой</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Фасад</div>
+
+											<div class="data">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group3">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Доска</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group3">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Брус</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group3">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>OSB панели</div>
+													</label>
+												</div>
+
+												<div class="hide">
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="group3">
+
+															<div class="check">
+																<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>Брус</div>
+														</label>
+													</div>
+
+													<div class="field">
+														<label class="checkbox">
+															<input type="checkbox" name="group3">
+
+															<div class="check">
+																<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+															</div>
+
+															<div>OSB панели</div>
+														</label>
+													</div>
+												</div>
+
+												<button type="button" class="spoler_btn">
+													<span>Показать все</span>
+													<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+												</button>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Расположение окон</div>
+
+											<div class="data">
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group4">
+														<div class="check"></div>
+														<div>Окна на торцах</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group4">
+														<div class="check"></div>
+														<div>Окна на фасаде</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="radio">
+														<input type="radio" name="group4" checked>
+														<div class="check"></div>
+														<div>Оба варианта</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="item">
+											<div class="name">Комплектация</div>
+
+											<div class="data">
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group5">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Мебель</div>
+													</label>
+												</div>
+
+												<div class="field">
+													<label class="checkbox">
+														<input type="checkbox" name="group5">
+
+														<div class="check">
+															<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+														</div>
+
+														<div>Камин</div>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="submit">
+											<button type="submit" class="submit_btn">
+												Показать <span>2</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</aside>
+
+
+							<section class="content">
+								<div class="filter_selected">
+									<div class="row">
+										<button class="btn">
+											<span>1 000 000 — 99 999 999 ₽</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>30 — 35 м²</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Бизнес</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Доска</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Брус</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>OSB панели</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Окна на фасаде</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+
+										<button class="btn">
+											<span>Мебель</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+									</div>
+								</div>
+
+
+								<div class="head">
+									<div class="sort">
+										<button class="btn active down">
+											<span>Популярность</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</button>
+
+										<button class="btn down">
+											<span>Цена</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</button>
+
+										<button class="btn down">
+											<span>По размеру скидки</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+										</button>
+									</div>
+
+									<button class="btn reset_btn">Сбросить все</button>
+								</div>
+
+
+								<div class="grid row">
+									<div class="project">
+										<a href="/" class="thumb">
+											<img src="images/tmp/project_thumb.jpg" alt="" loading="lazy">
+
+											<div class="stickers">
+												<div class="sticker green">Топ 10</div>
+												<div class="sticker">Хит</div>
+											</div>
+
+											 <button class="like_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like_a"></use></svg>
+												<span>129</span>
+											</button>
+										</a>
+
+										<div class="info">
+											<div class="name">Планировка 11</div>
+
+											<div class="features">
+												<div>
+													<div class="label">Размер, футов</div>
+													<div class="val">40</div>
+												</div>
+
+												<div>
+													<div class="label">Площадь, м²</div>
+													<div class="val">30</div>
+												</div>
+
+												<div>
+													<div class="label">Тип</div>
+													<div class="val">Жилой</div>
+												</div>
+
+												<div>
+													<div class="label">Фасад</div>
+													<div class="val">Доска</div>
+												</div>
+
+												<div>
+													<div class="label">Окона</div>
+													<div class="val">Оба варианта</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<div>2 980 000 ₽</div>
+												<div class="old">6 187 500 ₽</div>
+												<div class="discount">-78%</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project">
+										<a href="/" class="thumb">
+											<img src="images/tmp/project_thumb.jpg" alt="" loading="lazy">
+
+											<div class="stickers">
+												<div class="sticker green">Топ 10</div>
+												<div class="sticker">Хит</div>
+											</div>
+
+											 <button class="like_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like_a"></use></svg>
+												<span>129</span>
+											</button>
+										</a>
+
+										<div class="info">
+											<div class="name">Планировка 11</div>
+
+											<div class="features">
+												<div>
+													<div class="label">Размер, футов</div>
+													<div class="val">40</div>
+												</div>
+
+												<div>
+													<div class="label">Площадь, м²</div>
+													<div class="val">30</div>
+												</div>
+
+												<div>
+													<div class="label">Тип</div>
+													<div class="val">Жилой</div>
+												</div>
+
+												<div>
+													<div class="label">Фасад</div>
+													<div class="val">Доска</div>
+												</div>
+
+												<div>
+													<div class="label">Окона</div>
+													<div class="val">Оба варианта</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<div>2 980 000 ₽</div>
+												<div class="old">6 187 500 ₽</div>
+												<div class="discount">-78%</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project">
+										<a href="/" class="thumb">
+											<img src="images/tmp/project_thumb.jpg" alt="" loading="lazy">
+
+											<div class="stickers">
+												<div class="sticker green">Топ 10</div>
+												<div class="sticker">Хит</div>
+											</div>
+
+											<button class="like_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like_a"></use></svg>
+												<span>129</span>
+											</button>
+										</a>
+
+										<div class="info">
+											<div class="name">Планировка 11</div>
+
+											<div class="features">
+												<div>
+													<div class="label">Размер, футов</div>
+													<div class="val">40</div>
+												</div>
+
+												<div>
+													<div class="label">Площадь, м²</div>
+													<div class="val">30</div>
+												</div>
+
+												<div>
+													<div class="label">Тип</div>
+													<div class="val">Жилой</div>
+												</div>
+
+												<div>
+													<div class="label">Фасад</div>
+													<div class="val">Доска</div>
+												</div>
+
+												<div>
+													<div class="label">Окона</div>
+													<div class="val">Оба варианта</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<div>2 980 000 ₽</div>
+												<div class="old">6 187 500 ₽</div>
+												<div class="discount">-78%</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project">
+										<a href="/" class="thumb">
+											<img src="images/tmp/project_thumb.jpg" alt="" loading="lazy">
+
+											<div class="stickers">
+												<div class="sticker green">Топ 10</div>
+												<div class="sticker">Хит</div>
+											</div>
+
+											 <button class="like_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like_a"></use></svg>
+												<span>129</span>
+											</button>
+										</a>
+
+										<div class="info">
+											<div class="name">Планировка 11</div>
+
+											<div class="features">
+												<div>
+													<div class="label">Размер, футов</div>
+													<div class="val">40</div>
+												</div>
+
+												<div>
+													<div class="label">Площадь, м²</div>
+													<div class="val">30</div>
+												</div>
+
+												<div>
+													<div class="label">Тип</div>
+													<div class="val">Жилой</div>
+												</div>
+
+												<div>
+													<div class="label">Фасад</div>
+													<div class="val">Доска</div>
+												</div>
+
+												<div>
+													<div class="label">Окона</div>
+													<div class="val">Оба варианта</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<div>2 980 000 ₽</div>
+												<div class="old">6 187 500 ₽</div>
+												<div class="discount">-78%</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="project">
+										<a href="/" class="thumb">
+											<img src="images/tmp/project_thumb.jpg" alt="" loading="lazy">
+
+											<div class="stickers">
+												<div class="sticker green">Топ 10</div>
+												<div class="sticker">Хит</div>
+											</div>
+
+											 <button class="like_btn">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like"></use></svg>
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_like_a"></use></svg>
+												<span>129</span>
+											</button>
+										</a>
+
+										<div class="info">
+											<div class="name">Планировка 11</div>
+
+											<div class="features">
+												<div>
+													<div class="label">Размер, футов</div>
+													<div class="val">40</div>
+												</div>
+
+												<div>
+													<div class="label">Площадь, м²</div>
+													<div class="val">30</div>
+												</div>
+
+												<div>
+													<div class="label">Тип</div>
+													<div class="val">Жилой</div>
+												</div>
+
+												<div>
+													<div class="label">Фасад</div>
+													<div class="val">Доска</div>
+												</div>
+
+												<div>
+													<div class="label">Окона</div>
+													<div class="val">Оба варианта</div>
+												</div>
+											</div>
+
+											<div class="price">
+												<div>2 980 000 ₽</div>
+												<div class="old">6 187 500 ₽</div>
+												<div class="discount">-78%</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</section>
+
+
+						<div class="text_block">
+							<h1>Индивидуальные кулинарные пространства</h1>
+
+							<p>Данный дом представляет собой уютное пространство, созданное из одного 40-футового контейнера. Он воплощает в себе идею уединенной дачи, идеальной для отдыха и релаксации. Внешний фасад украшен теплыми деревянными элементами, придающими дому природную привлекательность. Внутри вы найдете открытую гостиную, кухню и столовую зону, создающие атмосферу уюта и комфорта</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="bg no_m">
+				<div class="cont row">
+					<div class="col">
+						<div class="logo">
+							<img src="images/logo2.svg" alt="">
+						</div>
+
+						<div class="copyright">&copy; KRAFTAINER 2023</div>
+					</div>
+
+
+					<div class="links">
+						<div><a href="/">Главная</a></div>
+						<div><a href="/">Для жизни и отдыха</a></div>
+						<div><a href="/">Для бизнеса</a></div>
+						<div><a href="/">О нас</a></div>
+						<div><a href="/">Стоимость и варианты</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+
+
+					<div class="contacts">
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="phone">
+							<a href="tel:88006003855">8 800 600 38 55</a>
+						</div>
+
+						<div class="phone">
+							<a href="tel:89939018028">8 993 901 80 28</a>
+						</div>
+
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_inst"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_youtube"></use></svg>
+							</a>
+						</div>
+					</div>
+
+
+					<div class="buttonUp">
+						<button class="btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_buttonUp"></use></svg>
+						</button>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_title">Оставьте контакты для связи</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Введите ваше имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="+7 999 999 00 01">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name="" placeholder="Комментарий"></textarea>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">
+						<span>Отправить</span>
+
+						<div class="icon">
+							<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+						</div>
+					</button>
+				</div>
+
+				<div class="agree">Нажимая кнопку «Отправить» вы даете согласие на обработку своих персональных данных, согласно <a href="/" target="_blank">политике конфиденциальности</a> сайта</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="city_modal">
+			<div class="modal_title">Ваш город</div>
+
+			<div class="search">
+				<form action="">
+					<input type="text" name="" value="" class="input" placeholder="Найти город">
+
+					<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+				</form>
+			</div>
+
+			<div class="quike_links">
+				<div class="row">
+					<div class="mob"><button class="btn">Москва</button></div>
+					<div class="mob"><button class="btn">Санкт-Петербург</button></div>
+					<div class="mob"><button class="btn">Новосибирск</button></div>
+					<div class="mob"><button class="btn">Краснодар</button></div>
+					<div class="mob"><button class="btn">Екатеринбург</button></div>
+					<div class="mob"><button class="btn">Казань</button></div>
+					<div class="mob"><button class="btn">Уфа</button></div>
+					<div><button class="btn">Нижний Новгород</button></div>
+					<div class="mob"><button class="btn">Челябинск</button></div>
+					<div><button class="btn">Самара</button></div>
+					<div><button class="btn">Ростов-на-Дону</button></div>
+					<div class="mob"><button class="btn">Омск</button></div>
+					<div><button class="btn">Красноярск</button></div>
+					<div><button class="btn">Воронеж</button></div>
+					<div><button class="btn">Пермь</button></div>
+					<div><button class="btn">Волгоград</button></div>
+					<div><button class="btn">Владивосток</button></div>
+				</div>
+			</div>
+
+			<div class="data">
+				<div class="col">
+					<div class="title">Округ</div>
+
+					<div class="items">
+						<div><button class="btn">Дальневосточный</button></div>
+						<div><button class="btn">Приволжский</button></div>
+						<div><button class="btn">Северо-Западный</button></div>
+						<div><button class="btn">Северо-Кавказский</button></div>
+						<div><button class="btn">Сибирский</button></div>
+						<div><button class="btn">Уральский</button></div>
+						<div><button class="btn">Центральный</button></div>
+						<div><button class="btn">Южный</button></div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="title">Регион</div>
+
+					<div class="items">
+						<div><button class="btn">Белгородская область</button></div>
+						<div><button class="btn">Брянская область</button></div>
+						<div><button class="btn">Владимирская область</button></div>
+						<div><button class="btn">Город Москва</button></div>
+						<div><button class="btn">Ивановская область</button></div>
+						<div><button class="btn">Калужская область</button></div>
+						<div><button class="btn">Костромская область</button></div>
+						<div><button class="btn">Курская область</button></div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="title">Город</div>
+
+					<div class="items">
+						<div><button class="btn">Алексеевка</button></div>
+						<div><button class="btn">Белгород</button></div>
+						<div><button class="btn">Бехтеевка</button></div>
+						<div><button class="btn">Бирюч</button></div>
+						<div><button class="btn">Бобровы Дворы</button></div>
+						<div><button class="btn">Большетроицкое</button></div>
+						<div><button class="btn">Борисовка</button></div>
+						<div><button class="btn">Валуйки</button></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="sort_modal">
+			<div class="title">Сортировка</div>
+
+			<div><button class="btn">Дешевле</button></div>
+			<div><button class="btn">Дороже</button></div>
+			<div><button class="btn">Популярные</button></div>
+			<div><button class="btn">По размеру скидки</button></div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/intlTelInput.min.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

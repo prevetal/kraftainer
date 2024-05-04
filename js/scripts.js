@@ -5,8 +5,7 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
-	document.addEventListener( 'wpcf7mailsent', function( event ) {
+	document.addEventListener('wpcf7mailsent', function( event ) {
 		Fancybox.close()
 
 		Fancybox.show([{
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	    if(event.detail.contactFormId == '172') {
 	     	ym(91687085,'reachGoal','footer')
 	    }
-       
     }, false );
 
 	$('#city_modal .quike_links .btn').click(function(e) {
@@ -40,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		$("header .phone a").text(phone);
 		$("header .city .btn span").text(text);
 	});
-    
+
 	// Локации
 	let locations = document.querySelector('.locations .images .swiper')
 
@@ -200,10 +198,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				loadOnTransitionStart: true,
 				loadPrevNext: true
 			},
-			autoplay: {
+			/*autoplay: {
 				delay: 6000,
 				disableOnInteraction: false
-			},
+			},*/
 			on: {
 				beforeTransitionStart: swiper => {
 					!swiper.realIndex
@@ -771,6 +769,116 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Какие-то гарантии?
 	initWhatGuaranteesSliders()
+
+
+	// Проекты - Лайк
+	$('.projects .project .like_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Проекты - Фильтр
+	$('.projects .filter .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.data')
+
+		$(this).toggleClass('active')
+		parent.find('.hide').slideToggle(300)
+	})
+
+
+	// Страница проектв
+	if ($('.project_info .images').length) {
+		const projectSlider = new Swiper('.project_info .images .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+				bulletActiveClass: 'active'
+			},
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			on: {
+				slideChange: swiper => {
+					setTimeout(() => {
+						$('.project_info .images .thumbs .btn').removeClass('active')
+						$('.project_info .images .thumbs .btn').eq(swiper.activeIndex).addClass('active')
+					})
+				}
+			}
+		})
+
+		$('.project_info .images .thumbs .btn').click(function (e) {
+			e.preventDefault()
+
+			projectSlider.slideTo($(this).data('slide-index'), 500)
+		})
+	}
+
+
+	// Галерея
+	const gallerySliders = [],
+		gallery = document.querySelectorAll('.gallery .swiper')
+
+	gallery.forEach(function (el, i) {
+		el.classList.add('gallery_s' + i)
+
+		let options = {
+			loop: false,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			slidesPerView: 1,
+			breakpoints: {
+				0: {
+					spaceBetween: 15
+				},
+				768: {
+					spaceBetween: 24
+				}
+			},
+		}
+
+		gallerySliders.push(new Swiper('.gallery_s' + i, options))
+	})
+
+
+	// World phones
+	$('.phone_input').intlTelInput({
+		showSelectedDialCode: true,
+		initialCountry: 'ru'
+	})
 })
 
 

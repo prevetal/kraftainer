@@ -35,4 +35,14 @@
             transform-origin: left top;
         }
     }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .content_row .content
+    {
+        width: calc(100% - 320px);
+    }
 }
